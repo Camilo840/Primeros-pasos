@@ -16,7 +16,7 @@ namespace Primeros_pasos
             b = 20;
             suma = a + b;
             Console.WriteLine("La suma de {0} + {1} = {2}", a, b, suma);
-            Console.ReadKey();
+            
 
             //tipo de dato: número en coma flotante.
             float sueldo, egreso, total;
@@ -44,9 +44,42 @@ namespace Primeros_pasos
             sw = a > b;
             Console.WriteLine("El valor de booleano sw: {0}", sw);
 
-            
+            //Pilares fundamentales de la programación estructura.
+            //ejecucion de sentencias secuenciales.
+            //Uso estructuras repetitivas.
+            //uso estructuras selectivas.
+            saludos(nombre);
+            saludos("José Alcivar");
+            saludos("Camilo Cabrera");
+
+            Console.WriteLine();
+            Console.WriteLine("LLamada a funcion que devuelve valor");
+            Console.WriteLine("Líquido a recibir para Juan {0}", calcularSueldo(300, 200));
+            Console.WriteLine("Líquido a recibir para Carlos {0}", calcularSueldo(200, 1000));
+            Console.WriteLine("Líquido a recibir para Ana {0}", calcularSueldo(400, 500));
+
+
             Console.ReadKey();
- 
+
         }
+        //funciones: subprocesos - subprogramas - subrutinas.
+        //dividir el codigo en módulos 
+        //reutilizar el código.
+        //devuelven valores - no devulven valores.
+        public static void saludos(String nombre) //parámetro - argumento
+        {
+            Console.WriteLine("Funciones que nodevuelven valores...");
+            Console.WriteLine("HOLA {0}", nombre);
+
+
+        }
+        //funcion que devuelven valores 
+        //la función devuelve un tipo de dato.
+        static int calcularSueldo(int ingreso, int egreso)
+        {
+            return (ingreso-egreso);
+        }
+
     }
+
 }
