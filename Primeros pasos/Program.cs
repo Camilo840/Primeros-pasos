@@ -58,6 +58,7 @@ namespace Primeros_pasos
             Console.WriteLine("Líquido a recibir para Carlos {0}", calcularSueldo(200, 1000));
             Console.WriteLine("Líquido a recibir para Ana {0}", calcularSueldo(400, 500));
 
+            figura("asterisco");
 
             Console.ReadKey();
 
@@ -79,7 +80,16 @@ namespace Primeros_pasos
         {
             return (ingreso-egreso);
         }
+        //Crear funcion que imprima la siguiente figura
+        public static void figura(String asterisco) //parámetro - argumento
+        {
+         Console.WriteLine("\t     *");
+         Console.WriteLine("\t    * *");
+         Console.WriteLine("\t   * * *");
+         Console.WriteLine("\t  * * * *");
+         Console.WriteLine("\t * * * * *");
 
+        }
     }
 
 }
