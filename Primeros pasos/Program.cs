@@ -63,11 +63,19 @@ namespace Primeros_pasos
 
             figura("asterisco");
 
-            //Función, cuadrado de un numero.
+            //Función, cuadrado de un numero .
             Console.Write("Ingresa el entero :");
             entero = int.Parse(Console.ReadLine());
             Console.WriteLine("El cuadrado del numero es : {0}", cuadradoNumero(entero));
 
+            //Función Condicional.
+            int numa, numb;
+            Console.Write("Ingresa el numero a :");
+            numa = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingresa el numero b :");
+            numb = int.Parse(Console.ReadLine());
+            Console.WriteLine("El resultado es : {0}", condicional(numa,numb));
             Console.ReadKey();
 
         }
@@ -105,6 +113,24 @@ namespace Primeros_pasos
             int num;
             num = (numero * numero);
             return num;
+        }
+
+        //función Condicional. (a > b) entonces suma || (a < b) entoces resta.
+        static int condicional(int a, int b)
+        {
+            int resultadoF;
+            if (a > b)
+            {
+
+                resultadoF = a + b;
+            }
+           else
+            {
+
+                resultadoF = a - b;
+            }
+            return resultadoF ;
+            
         }
     }
 
