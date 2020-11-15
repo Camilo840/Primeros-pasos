@@ -76,6 +76,15 @@ namespace Primeros_pasos
             Console.Write("Ingresa el numero b :");
             numb = int.Parse(Console.ReadLine());
             Console.WriteLine("El resultado es : {0}", condicional(numa,numb));
+
+            //Función (Bucle for)
+            int rI, rF;
+            Console.Write("Ingresa el rango inicial para la sumatoria :");
+            rI = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingresa el rango final para la sumatoria :");
+            rF = int.Parse(Console.ReadLine());
+            Console.WriteLine("La sumatoria de los numeros son : {0}", sumatoria(rI, rF));
             Console.ReadKey();
 
         }
@@ -132,6 +141,20 @@ namespace Primeros_pasos
             return resultadoF ;
             
         }
+
+        //Función (bucle for.) Sumatoria de los numeros.
+        static int sumatoria(int rangoI, int rangoF)
+        {
+            int sumato = 0;
+            for (int x = rangoI; x <= rangoF; x++)
+            {
+                sumato = sumato + x ;
+            }
+            return sumato;
+        }
+
+
+
     }
 
 }
