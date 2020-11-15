@@ -20,6 +20,7 @@ namespace Primeros_pasos
 
             //tipo de dato: número en coma flotante.
             float sueldo, egreso, total;
+            int entero;
             Console.Write("Ingresa el sueldo :");
             sueldo = float.Parse(Console.ReadLine());
 
@@ -28,6 +29,8 @@ namespace Primeros_pasos
 
             total = sueldo - egreso;
             Console.WriteLine("El líquido a recibir es : {0}", total);
+
+           
 
 
             //tipo de dato: flotante de doble precisión.
@@ -60,6 +63,11 @@ namespace Primeros_pasos
 
             figura("asterisco");
 
+            //Función, cuadrado de un numero.
+            Console.Write("Ingresa el entero :");
+            entero = int.Parse(Console.ReadLine());
+            Console.WriteLine("El cuadrado del numero es : {0}", cuadradoNumero(entero));
+
             Console.ReadKey();
 
         }
@@ -89,6 +97,14 @@ namespace Primeros_pasos
          Console.WriteLine("\t  * * * *");
          Console.WriteLine("\t * * * * *");
 
+        }
+
+        //Función cuadrado de un numero.
+        static int cuadradoNumero(int numero)
+        {
+            int num;
+            num = (numero * numero);
+            return num;
         }
     }
 
